@@ -1,5 +1,8 @@
 function fibonacci(num) {
   // type your code here
+  if (num === 1 || num === 0) return num;
+
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
 if (require.main === module) {
